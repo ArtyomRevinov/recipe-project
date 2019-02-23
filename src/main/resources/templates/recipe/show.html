@@ -97,7 +97,9 @@
                                 <ul>
                                     <!--/*@thymesVar id="recipe" type="com.example.recipe.domain.Recipe"*/-->
                                     <li th:each="ingredient : ${recipe.ingredients}"
-                                        th:text="${(ingredient.getAmount() + ' ' + ingredient.unitOfMeasure.getDescription() + ' - ' + ingredient.getDescription())}"></li>
+                                        th:text="${(ingredient.getAmount() +
+                                        ' ' + ingredient.unitOfMeasure.getDescription()
+                                        + ' - ' + ingredient.getDescription())}"></li>
                                 </ul>
                             </div>
                         </div>
